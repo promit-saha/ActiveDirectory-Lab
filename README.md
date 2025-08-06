@@ -42,7 +42,7 @@ promit.local
 
 A PowerShell script was created to automate the creation of users inside each OU.
 
-📄 [Create-OU-Users.ps1](./Create-OU-Users.ps1)
+📄 [Create-OU-Users.ps1](scripts/Create-OU-Users.ps1)
 
 Key features:
 - Automatically assigns users to specific OUs
