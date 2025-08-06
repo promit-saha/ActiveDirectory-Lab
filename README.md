@@ -25,15 +25,14 @@ This project demonstrates the deployment and configuration of a basic **Active D
 - Added users manually and via PowerShell into respective OUs
 
 ---
-## 📁 OU and User Structure
 promit.local
 ├── IT_Department
-│ ├── IT USER1
-│ └── IT USER2
+│   ├── IT USER1
+│   └── IT USER2
 ├── HR
-│ └── HR USER1
+│   └── HR USER1
 └── AdminUsers
-└── Admin USER1
+    └── Admin USER1
 
 
 (Additional users created using PowerShell: IT USER3, HR USER2, Admin USER2)
