@@ -24,10 +24,10 @@ This project demonstrates the deployment and configuration of a basic **Active D
   - `AdminUsers`
 - Added users manually and via PowerShell into respective OUs
 
----
+
 <pre> ```text promit.local ├── IT_Department │ ├── IT USER1 │ └── IT USER2 ├── HR │ └── HR USER1 └── AdminUsers └── Admin USER1 ``` </pre>
 
-
+---
 (Additional users created using PowerShell: IT USER3, HR USER2, Admin USER2)
 
 ---
