@@ -25,13 +25,18 @@ This project demonstrates the deployment and configuration of a basic **Active D
 - Added users manually and via PowerShell into respective OUs
 
 
----
-<pre> ```text promit.local ├── IT_Department │ ├── IT USER1 │ └── IT USER2 ├── HR │ └── HR USER1 └── AdminUsers └── Admin USER1 ``` </pre>
----
----
-(Additional users created using PowerShell: IT USER3, HR USER2, Admin USER2)
+```text
+promit.local
+├── IT_Department
+│   ├── IT USER1
+│   └── IT USER2
+├── HR
+│   └── HR USER1
+└── AdminUsers
+    └── Admin USER1
+```
 
----
+*(Additional users created using PowerShell: IT USER3, HR USER2, Admin USER2)*
 
 ## 💻 PowerShell Script
 
@@ -50,9 +55,9 @@ Key features:
 
 | Description | Screenshot |
 |------------|------------|
-| Azure VM Setup | ![VM Setup](./screenshots/vm-setup.png) |
-| AD DS Installed | ![AD Installed](./screenshots/ad-installed.png) |
-| OU Structure | ![OU Structure](./screenshots/ou-created.png) |
+| Azure VM Setup | ![VM Setup](./screenshots/vm-setup.PNG) |
+| AD DS Installed | ![AD Installed](./screenshots/ad-installed.PNG) |
+| OU Structure | ![OU Structure](./screenshots/ou-created.PNG) |
 
 ---
 
