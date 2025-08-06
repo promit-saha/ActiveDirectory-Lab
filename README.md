@@ -1,27 +1,78 @@
-# Active Directory Lab in Azure
+# 🖥️ Active Directory Lab on Azure VM
 
-## Overview
-This project demonstrates setting up a basic Active Directory Domain Services (AD DS) environment using a Windows Server 2022 VM on Microsoft Azure. It includes domain setup, user creation, and RDP access simulation.
+## 🔧 Overview
+This project demonstrates the deployment and configuration of a basic **Active Directory Domain Services (AD DS)** environment on a **Windows Server 2022** virtual machine hosted in **Microsoft Azure**. The setup replicates real-world IT administrative tasks such as domain configuration, OU structuring, user account creation, and PowerShell automation.
 
-## Tools Used
-- Azure Portal
-- Windows Server 2022
-- Active Directory Domain Services (AD DS)
-- RDP
+---
 
-## What I Did
-- Created and configured a Windows Server VM in Azure.
-- Installed and promoted AD DS to create `promit.local` domain.
-- Added sample users and groups to simulate enterprise environment.
-- Captured and documented each step.
+## 🛠️ Environment
+- **Platform:** Microsoft Azure (Azure for Students)
+- **Operating System:** Windows Server 2022 Datacenter (Azure Edition)
+- **Domain:** `promit.local`
+- **Server Name:** `AD-Server`
+- **Tools Used:** Server Manager, Active Directory Users and Computers (ADUC), PowerShell
 
-## Screenshots
-![VM Setup](screenshots/vm-setup.png)
-![AD Installed](screenshots/ad-installed.png)
-![User Created](screenshots/user-added.png)
+---
 
-## Skills Demonstrated
-- Azure virtual machine management
-- Windows Server administration
-- Active Directory configuration
-- User provisioning
+## ✅ Tasks Completed
+- Provisioned a Windows Server 2022 VM using Azure
+- Installed **Active Directory Domain Services (AD DS)**
+- Created a new domain: `promit.local`
+- Created Organizational Units (OUs) to simulate a company structure:
+  - `IT_Department`
+  - `HR`
+  - `AdminUsers`
+- Added users manually and via PowerShell into respective OUs
+
+---
+## 📁 OU and User Structure
+promit.local
+├── IT_Department
+│ ├── IT USER1
+│ └── IT USER2
+├── HR
+│ └── HR USER1
+└── AdminUsers
+└── Admin USER1
+
+
+(Additional users created using PowerShell: IT USER3, HR USER2, Admin USER2)
+
+---
+
+## 💻 PowerShell Script
+
+A PowerShell script was created to automate the creation of users inside each OU.
+
+📄 [Create-OU-Users.ps1](./Create-OU-Users.ps1)
+
+Key features:
+- Automatically assigns users to specific OUs
+- Sets secure default passwords
+- Enables accounts upon creation
+
+---
+
+## 🖼️ Screenshots
+
+| Description | Screenshot |
+|------------|------------|
+| Azure VM Setup | ![VM Setup](./screenshots/vm-setup.png) |
+| AD DS Installed | ![AD Installed](./screenshots/ad-installed.png) |
+| OU Structure | ![OU Structure](./screenshots/ou-created.png) |
+
+---
+
+## 🎯 Skills Demonstrated
+- Deploying and configuring VMs in Azure
+- Installing and managing Active Directory Domain Services
+- Creating and managing OUs and user accounts
+- Automating tasks with PowerShell
+- Documenting IT infrastructure environments
+
+---
+
+## 📌 Notes
+This project showcases core IT support and sysadmin skills, and is part of a growing portfolio designed to demonstrate job-ready technical competencies in Windows Server environments and enterprise IT systems.
+
+
